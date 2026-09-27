@@ -1,0 +1,13 @@
+# Render blueprint — one-click deploy for the ISP Connect prototype.
+# Push this repo to GitHub, then on Render: New > Blueprint > select repo.
+services:
+  - type: web
+    name: isp-connect
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
+      # NOTE: free tier disk is ephemeral — the SQLite DB resets on
+      # redeploy/restart. Fine for demo; production needs a persistent disk.

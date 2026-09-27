@@ -1,0 +1,1 @@
+{"dependencies":{"bcryptjs":"^2.4.3","express":"^4.21.2","firebase-admin":"^12.7.0","jsonwebtoken":"^9.0.2"},"description":"ISP customer app prototype: notifications + complaint tickets (PWA + admin panel)","main":"server.js","name":"isp-connect","scripts":{"start":"node server.js"},"version":"1.0.0"}
